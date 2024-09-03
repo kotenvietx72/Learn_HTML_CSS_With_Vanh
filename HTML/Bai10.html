@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buổi 8: Form </title>
+    </head>
+    <body>
+        <!--Form gửi theo kiểu điền kí tự-->
+        <form>
+            <label for="fname">First Name: </label> <br><br> <!--Label: Tiêu đề ô nhập-->
+            <!--for phải trùng với id để kết nối, nhấn vào First Name thì ô nhập sẽ được chọn-->
+            <input type="text" id="fname" name="ho" value="Vanh"><br> <!--input: Nhập thông tin-->
+            <!--Input đủ 4 yếu tố: Type là kiểu nhập dữ liệu
+                                   ID trùng với for của label
+                                   name là tên của biến lưu dữ liệu
+                                   value là dữ liệu mình chọn
+            Dữ liệu gửi về là: name + value-->
+            <label for="lname">Last Name: </label> <br><br> 
+            <input type="text" id="lname" name="ten" value="Nguyen"><br>
+            <input type="submit" value="Gửi Form"> <!--Nút gửi form-->
+        </form>
+        <!--Form gửi theo kiểu lựa chọn-->
+        <form>
+            <input type="radio" id="html" name="language" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="language" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" id="jv" name="language" value="JavaScript">
+            <label for="jv">JavaScript</label><br>
+
+            <input type="submit" value="Gửi Form">
+        </form>
+    </body>
+</html>

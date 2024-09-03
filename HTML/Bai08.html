@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 7: List</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Link icon đẹp-->
+        <style>
+            ul{
+                list-style: none; /* Bỏ đi dấu chấm ở ul */
+                /* ol cũng tương tự, bỏ số */
+                /*list-style: circle(Hình tròn k có nhân)
+                              square(Hình vuông)  */
+            }
+            .fa-cloud{
+                font-size: 25px;
+                color:aquamarine;
+            }
+            li::before{ /* Đứng trước li là ND bên trong content */
+                content: '\f4c0'; /* Dùng mã unicode*/
+                font-family: "Font Awesome 6 Free"; /* Kiểu trong ngoặc */
+                font-weight: 900; /* Độ đậm nhạt */
+                color:aquamarine;
+                margin-right: 15px;
+            }
+            li::after{
+                content: 'Ở sau'; /* Đứng sau li là ND bên trong content */
+            }
+        </style>
+    </head>
+    <body>
+        <h2>An unordered HTML List</h2>
+        <ul> <!--ul: unordered list(Danh sách k có số thứ tự)-->
+            <li> Coffee</li> <!--li: List item-->
+            <li> Tea</li>
+            <li> Milk</li>
+        </ul>
+        <h2>An ordered HTML list</h2>
+        <ol type="1"> <!--ol: ordered list(Danh sách có số thứ tự)-->
+                      <!--type: Kiểu đánh STT-->
+            <li>Coffee</li> <!--li: List item-->
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+    </body>
+</html>

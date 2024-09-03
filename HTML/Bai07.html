@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buổi 6: Table(Tiếp) </title>
+        <style>
+            table, th, td {
+                border: 1px solid;
+                border-collapse: collapse;
+                background-color: aqua;
+            }
+            th, td{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width: 100%;">
+            <tr>
+                <th colspan="2">Cột 1 + 2</th> <!--colspan="2": Gộp 2 cột với nhau thành 1 ô-->
+                <th>Cột 3</th>
+            </tr>
+            <tr>
+                <td>Nội dung 1</td>
+                <td>Nội dung 2</td>
+                <td>Nội dung 3</td>
+            </tr>
+            <tr>
+                <td>Nội dung 4</td>
+                <td>Nội dung 5</td>
+                <td>Nội dung 6</td>
+            </tr>
+        </table>
+        <br><br><br><br>
+        <table style="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>555-1234</td>
+            </tr>
+            <tr>
+                <td>555-8745</td>
+            </tr>
+        </table>
+    </body>
+</html>

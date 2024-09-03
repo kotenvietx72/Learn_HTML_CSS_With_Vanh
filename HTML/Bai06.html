@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 6</title>
+        <style>
+            p{
+                border: 1px solid;
+                /* Viền của 1 ô, ba thuộc tính: Đầu là kích thước viền, 2 là kiểu viền, ba là màu */
+                /*Một số loại border:  dotted(Chấm nhỏ)
+                                       dashed(Đường kẻ nhỏ)
+                                       double(2 đường kẻ)*/
+                border-radius: 1px; /* Bo tròn các góc */
+                margin: 20px /* Khoảng cách từ viền tới các đối tượng 4 phía */;
+                padding: 20px; /* Khoảng cách từ viền tới ND bên trong */ 
+            }
+            table, th, td{
+                border: 1px solid;
+                border-collapse: collapse; /* Bỏ đi các viền trùng nhau, còn 1 viền */
+            }
+            td{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Chào cậu iu</p>
+        <table style="width: 100%;">
+            <tr>
+                <th>Cột 1</th>
+                <th>Cột 2</th>
+                <th>Cột 3</th>
+            </tr>
+            <tr>
+                <td>Nội dung 1</td>
+                <td>Nội dung 2</td>
+                <td>Nội dung 3</td>
+            </tr>
+            <tr>
+                <td>Nội dung 4</td>
+                <td>Nội dung 5</td>
+                <td>Nội dung 6</td>
+            </tr>
+        </table>
+    </body>
+</html>
