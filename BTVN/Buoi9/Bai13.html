@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 13 trong BTVN</title>
+        <style>
+            table, td, th{
+                border: 1px solid #27A4F2;
+                border-collapse: collapse;
+            }
+            table{
+                background-color:rgb(247, 241, 208);
+                width: 500px;
+                margin: auto;
+                
+            }
+            fieldset{
+                color: brown;
+                border: 2px double;
+            }
+            th, .mot{
+                color: #27A4F2;
+                font-weight: 400;
+                text-align: left;
+                padding-left: 5px;
+            }
+            h1{
+                text-align: center;
+                color: #27A4F2;
+            }
+            .hai{
+                margin: 10px 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Đăng ký du lịch</h1>
+        <form>
+            <table>
+                <tr>
+                    <th><label for="name">Họ và tên</label></th>
+                    <td><input id="name" name="name" type="text" style="width: 90%;"></td>
+                </tr>
+                <tr>
+                    <th><label for="diachi">Địa chỉ</label></th>
+                    <td><input id="diachi" name="diachi" type="text" style="width: 70%"></td>
+                </tr>
+                <tr>
+                    <th><label for="dienthoai">Điện thoại</label></th>
+                    <td><input id="dienthoai" name="dienthoai" type="text" style="width: 50%"></td>
+                </tr>
+                <tr>
+                    <th>Khách Việt Nam</th>
+                    <td><input name="KhachVN" type="checkbox"></td>
+                </tr>
+                <tr>
+                    <th>Chọn tour</th>
+                    <td>
+                        <select id="tours" name="Tour">
+                            <optgroup label="Miền Bắc">
+                                <option value="HN1">Hà Nội - Hạ Long - Sapa</option>
+                                <option value="HN2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                                <option value="HN3">Hà Nội - Cát Bà - Tuần Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                                <option value="MT1">Huế - Bạch Mã - Đà Nẵng</option>
+                                <option value="MT2">Nha Trang - Đà Lạt</option>
+                                <option value="MT3">Buôn Mê Thuật - Gia Lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                                <option value="MN1">TP.HCM - Cần Thơ - Cà Mau</option>
+                                <option value="MN2">TP.HCM - Mỹ Tho</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phương tiện</th>
+                    <td>
+                        <input id="pt" name="pt" type="radio" value="Maybay">
+                        <label for="pt" class="mot">Máy bay</label>
+
+                        <input id="pt" name="pt" type="radio" value="Oto">
+                        <label for="pt" class="mot">Xe ô tô</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset class="hai">
+                            <legend><i>Số lượng đoàn khách</i></legend>
+                            <label for="people" class="mot">Người lớn</label>
+                            <input id="people" name="peopleLon" type="text" style="width: 50px;">
+
+                            <label for="people" class="mot">Trẻ em</label>
+                            <input id="people" name="peopleNho" type="text" style="width: 50px;">
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ghi chú thêm</th>
+                    <td>
+                        <textarea name="ghichu" style="width: 200px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="Đồng ý"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

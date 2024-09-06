@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buổi 9: Form (Tiếp)</title>
+    </head>
+    <body>
+        <form>
+            <label for="fname">First Name: </label> <br><br>
+            <input type="text" id="fname" name="ho" value="Vanh"><br>
+           
+            <label for="lname">Last Name: </label> <br><br> 
+            <input type="text" id="lname" name="ten" value="Nguyen"><br>
+
+            <input type="submit" value="Gửi Form">
+            <input type="reset" value="Reset"> <!--Reset thông tin trong ô thành trống-->
+        </form>
+        <!--Type: Checkbox(Chọn nhiều ô)
+                  Lưu ý: Name khác nhau
+                         Value: Phải viết-->
+        <!--Type: color(Chọn màu r hiển thị mã màu)-->
+        <!--Type: Date (Lấy được ngày tháng)-->
+        <!--Type: Email (Tự kiểm tra giá trị đầu vào dạng email, đầu vào k phải email bị báo lỗi)-->
+        <!--Type: File (Up được file lên web, đầu ra là link file)-->
+        <!--Type: Number (Chỉ có thể nhập số, có nút tăng giảm số, có thể thêm giá trị min và max)-->
+        <!--Thẻ danh sách chọn-->
+        <form>
+            <label for="cars">Select a car</label>
+            <select id="cars" name="cars" size="2" multiple> <!--Size: Cho người dùng xem trước 2,3 lựa chọn-->
+                <option value="Volvo">Volvo</option>         <!--multiple: Chọn nhiều(Ctrl + chuột)-->
+                <option value="audi">Audi</option>
+                <option value="Mec">Mec</option>
+                <option value="AWN">AWn</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>
+        <!--textarea: Tạo ra 1 ô để người dùng viết comment, có thể thay đổi kích thước bằng kéo thả-->
+        <form>
+            <label for="G">Góp ý: </label>
+            <textarea name="GopY" style="width: 300px; height: 200px;">Ai yêu cậu hơn</textarea>
+            <br><br>
+            <input type="submit" value="submit"> 
+        </form>
+        <!--button là nút ngoài form, onclick là khi nhấn vào thực hiện 1 hành động gì đấy-->
+        <button onclick="alert('Hello Vanh')">Click meeeee</button>
+        <form>
+            <fieldset> <!--Bao lại form trong 1 ô và có tên là thẻ legend-->
+                <legend>Form Đăng Kí: </legend>
+                <label for="fname">First Name: </label><br>
+                <input type="text" id="fname" name="ho" value="Vanh"><br>
+            
+                <label for="lname">Last Name: </label><br>
+                <input type="text" id="lname" name="ten" value="Nguyen"><br>
+
+                <input type="submit" value="Gửi Form">
+                <input type="reset" value="Reset">
+            </fieldset>  
+        </form>
+        <!--DataList: Search tên trong dữ liệu n data, có thể nhập tên để hiển thị-->
+        <form>
+            <input list="browers" name="browers">
+            <datalist id="browers">
+                <option value="Edge">
+                <option value="Chorme">
+                <option value="Cốc Cốc">
+                <option value="Fire Fox">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="submit">
+        </form>
+    </body>
+</html>

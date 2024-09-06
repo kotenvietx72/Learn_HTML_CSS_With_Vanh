@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 12 trong BTVN</title>
+        <style>
+            table, th, td{
+                border: 1px solid;
+                border-collapse: collapse;
+                background-color: #F0FFF0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1{
+                color: #228B22;
+                text-align: center;
+            }
+            th{
+                color: #228B22;
+                font-weight: 400;
+                text-align: left;
+                padding-left: 5px;
+                width: 30%;
+            }
+            .mot{
+                color: #228B22;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        <form>
+            <table style="width: 650px;">
+                <tr>
+                    <th><label for="name">Họ và tên</label></th>
+                    <td><input id="name" name="hoten" type="text" style="width: 90%"></td>
+                </tr>
+                <tr>
+                    <th><label for="diachi">Địa chỉ</label></th>
+                    <td><input id="diachi" name="diachi" type="text" style="width: 70%"></td>
+                </tr>
+                <tr>
+                    <th><label for="phone">Điện thoại</label></th>
+                    <td><input id="phone" name="phone" type="text" style="width: 50%"></td>
+                </tr>
+                <tr>
+                    <th>Phái</th>
+                    <td>
+                        <input id="Nam" name="phai" value="Nam" type="radio">
+                        <label for="Nam" class="mot">Nam</label>
+                        <input id="Nu" name="phai" value="Nu" type="radio">
+                        <label for="Nữ" class="mot">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Nghề nghiệp</th>
+                    <td>
+                        <select id="nn" name="nn">
+                            <option value="BS">Bác Sĩ</option>
+                            <option value="KS">Kỹ Sư</option>
+                            <option value="GV">Giáo Viên</option>
+                            <option value="K">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Chọn sản phẩm tham gia</th>
+                    <td>
+                            <select id="sp" name="sp" size="4" multiple >
+                                <option value="KDR">Kem Đánh Răng</option>
+                                <option value="BG">Bột Giặt</option>
+                                <option value="DGD">Dầu Gội Đầu</option>
+                                <option value="ST">Sữa Tắm</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="sl">Số người dự đoán tham gia</label></th>
+                    <td>
+                        <input id="sl" name="SLNguoi" type="text" style="width: 20%;">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" style="text-align: center;"><input type="submit" value="Đồng ý"></th>
+                </tr>
+        </table>
+        </form>
+        
+    </body>
+</html>
