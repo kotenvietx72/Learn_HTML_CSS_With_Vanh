@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Align - items</title>
+        <style>
+            .flex-container{
+                align-items: center; /* Các khối được căn giữa theo chiều dọc */
+                align-items: flex-start; /* Các khối được căn lên trên theo chiều dọc */
+                align-items: flex-end; /* Các khối được căn xuống dưới theo chiều dọc, từ trái sang phải */
+                align-content: space-between; /*Các dòng được cách nhau 1 khoảng bằng nhau, dòng 1 và dòng cuối được đẩy kịch */
+                align-content: space-around; /* Các dòng chia đều, cách cả lề trên và dưới khoảng cách bằng nhau */
+                /* Căn giữa khối nhỏ trong khối to, dùng justify-content và align-items(Căn theo chiều ngang và căn theo chiều dọc) */
+                line-height: 2px; /*Chiều cao khoảng trống thẻ*/
+                flex-shrink: 0; /* Cố định kích thước 1 ô, dù phóng to hay nhỏ, mặc định là 1 */
+                flex-basis: 200px; /* Chiều dài của khối */
+                flex-grow: 200px; /* Chiều rộng của khối */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container"> <!--order: Chỉnh lại thứ tự các khối con-->
+            <div style="order: 2">1</div>
+            <div style="order: 1">2</div>
+            <div style="order: 4">3</div>
+            <div style="order: 3">4</div>
+        </div>
+        <div class="flex-container"> <!--Flex-grow: Chia các ô có kích thước theo mình muốn-->
+            <div style="flex-grow: 1;">1</div>
+            <div style="flex-grow: 1;">2</div>
+            <div style="flex-grow: 8;">3</div>
+        </div>
+    </body>
+</html>

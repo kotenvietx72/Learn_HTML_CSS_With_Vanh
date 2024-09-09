@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation (Tiếp) </title>
+        <style>
+            span{
+                vertical-align: text-top; /* Chữ bay lên trên(sup) */
+                vertical-align: text-bottom; /* Chữ bay xuống dưới (sub) */
+            }
+            div{
+                animation-name: hoatanh; /* Gọi animation ở dưới */
+                animation-duration: 4s; /* Thời gian thực hiện animation */
+                animation-delay: 3s; /* Sau khi load trang 3s thì bắt đầu chạy */
+                animation-iteration-count: 3; /* Animation sẽ chạy 3 lần r dừng */
+                animation-iteration-count: infinite; /* Chạy liên tục và không bao giờ dừng */
+                animation-fill-mode: forwards; /* Chạy xong dừng ở phần tử cuối cùng */
+                
+            }
+            @keyframes hoatanh {
+                /* Đổi nền từ đỏ sang vàng */
+                from{background-color: red;}
+                to {background-color: yellow;}
+            }
+            @keyframes hoatanh2{
+                /* Hiệu ứng đổi nhiều màu */
+                0% {background-color: aqua;}
+                25% {background-color: blue;}
+                50% {background-color: cadetblue;}
+                100% {background-color: chocolate;}
+            }
+            @keyframes hoatanh3{
+                /* Hiệu ứng đổi nhiều màu và di chuyển khối */
+                0% {background-color: aqua; left: 0px; top:0px}
+                25% {background-color: blue; left: 200px; top:0px}
+                50% {background-color: cadetblue; left: 0px; top:200px}
+                100% {background-color: chocolate; left: 0px; top:0px}
+            }
+        </style>
+    </head>
+    <body>
+        <!--Vertical-align: Căn chữ lên xuống-->
+        <h1>Anh<span>yêu</span>em</h1>
+    </body>
+</html>

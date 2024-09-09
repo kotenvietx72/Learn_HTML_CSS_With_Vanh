@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 17: Flex Container</title>
+        <style>
+            .flex-container{
+                display: flex; /* Thay inline-block, float và position */
+                flex-direction: column; /* Các khối xếp theo cột */
+                flex-direction: row-reverse; /* Đối xứng, chạy từ phải sang trái */
+                flex-direction: column-reverse; /* Đối xứng, chạy từ dưới lên trên */
+                flex-wrap: wrap; /* Co màn hình lại các phần từ tự đẩy xuống dòng */
+                flex-wrap: wrap-reverse; /* Đảo vị trí, chạy từ dưới lên trên, trái sang phải */
+                justify-content: center; /* Căn giữa các khối */
+                justify-content: flex-start;  /* Căn trái các khối */
+                justify-content: flex-end;  /* Căn phải các khối */
+                justify-content: space-around; /* Khoảng cách giữa các khối chia đều nhau, cả lề */
+                justify-content: space-between /* Khoảng cách các khối chia đều nhau, nhưng khối 1 đẩy kịch trái, khối 2 đẩy kịch phải */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container"> <!--Các khối nằm trên cùng 1 hàng-->
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </body>
+</html>

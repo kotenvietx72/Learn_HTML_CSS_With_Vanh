@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Khai báo, tự động lấy chiều dài màn hình đt để responsive tự động-->
+        <title>Bài 19: Responsive</title>
+        <!--Khi chuyển sang điện thoại thì k bị lỗi chữ và ảnh nhỏ-->
+        <style>
+            img{
+                width: 100%; 
+                height: auto; /* Tự động */
+            }
+            .img-box{
+                width: 50%; /* Ảnh chỉ chiếm 50% của khối */
+            }
+            h1{
+                font-size: 2vw; /* Text chiếm 2% tỉ lệ màn hình */
+            }
+            @media screen and (max-width: 992px) {
+            /* Khống chế tỉ lệ màn hình nhận code, màn 992 trở xuống thì code đc chạy */
+            /* Set css trên điện thoại, không cần nhiều HTML */
+            body{
+                    background-color: blue;
+                    color: white;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>

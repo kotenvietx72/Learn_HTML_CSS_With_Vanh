@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Bài 15: Hiệu ứng đẹp, ảnh</title>
+        <style>
+            #grad1{
+                background-image: linear-gradient(red, yellow);
+                /* Tạo 1 dài màu trải dài từ đỏ sang vàng, màu đc trộn dần ở giữa */
+                /* Mặc định từ trên xuống dưới */
+                background-image: linear-gradient(to right,red, yellow);
+                /* Đi từ trái sang phải */
+                background-image: linear-gradient(45deg,red, yellow);
+                /* Đổi màu ở góc 45 độ */
+                background-image: linear-gradient(blue, green, yellow);
+                /* Nhiều màu */
+                color: rgb(256, 0, 0, 1); /* Số 1 cuối cùng là độ trong suốt, chay từ 0 tới 1 */
+                background-image: radial-gradient(black, white);
+                /* Đổi màu theo hình tròn */
+            }
+            .a > p{ /* Cho thẻ p, con của class gần nhất thuộc tính */
+                color: red;
+            }
+            h1{
+                text-shadow: 5px 2px 5px red; 
+                /*Bóng: Vị trí từ trái qua phải, trên xuống dưới, làm mờ và màu bóng */
+                object-fit: cover; /* Cắt hình đúng kích thước mình chọn, làm hình k bị méo */
+                object-fit: contain; /*Ảnh bị co lại đúng kích thước, căn giữa khối */
+            }
+            div{
+                box-shadow: 10px 10px 5px brown; 
+                /* Đổ bóng cho hộp, lần lướt trái sang phải, trên xuống dưới, làm mờ và đổi màu bóng */
+                transform: translate(50px, 100px);
+                /* Di chuyển khối, kết hợp với hover khi di chuột đến tạo hiệu ứng */
+                /* Có thể dùng đến căn giữa khối, nếu dùng position absolute, căn top left 50% vẫn bị lệch, thì dùng transform -50% -50% sẽ căn được chính giữa khối */
+                transform: rotate(20deg);
+                /* Khối quay 20 độ */
+                transform: scale(2, 3);
+                /* Phóng to dài lên 2, rộng lên 3 */
+                transition: 1s;
+                /* Set thời gian thay đổi, làm mượt chuyển động hơn */
+                transition-delay: 1s; 
+                /* Sau 1s bắt đầu thực hiện chuyển động */
+            }
+        </style>
+   </head> 
+   <body>
+
+   </body>
+</html>

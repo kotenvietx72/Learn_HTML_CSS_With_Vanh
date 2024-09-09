@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 13: Position</title>
+        <!--Di chuyển 1 đối tượng theo 3D-->
+        <!--Có thể đè lên các đối tượng khác-->
+        <style>
+        .relative{ /* Position: relative(Di chuyển theo độ dài mình chọn) */
+            position: relative;
+            top: -30px;
+            left:50px;
+            border: 2px solid blue;
+            background-color: brown;
+            width: 300px;
+            height: 200px;
+            /* Ít dùng, vì làm neo cho đối tượng khác và chỉ chỉnh đc top với left */
+        }
+        .absolute{ /* Luôn chạy quanh viền trang */
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            color: aqua;
+            background-color: chocolate;
+            width: 200px;
+            height: 100px;
+        }
+        .fixed{ /* Thường dùng để làm nút hotline, để ở đâu thì vẫn cố định ở 1 vị trí */
+        }
+        .sticky{ /* Thẻ này đứng yên, k bị trôi (Làm menu) */
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+        img{
+            z-index: -1; /* Càng nhỏ thì càng chìm xuống dưới */
+            /* Dùng làm ảnh nền */
+            float: right; /* Dồn ảnh về phải, ND sang tay phải */
+        }
+        div{
+            overflow: visible; /* Text dài hơn ô, thì chữ tràn ra ngoài ô, là mặc định */
+            overflow: hidden; /* Text dài hơn ô, sẽ bị ẩn đi, tránh vỡ khối */
+            overflow: scroll; /* Có thể kéo lên xuống để đọc ND bị ẩn */
+            overflow: auto; /* Chỉ xuất hiện thanh dọc, y hệt scroll */
+        }
+        </style>
+    </head>
+    <body>
+        <p>Tớ yêu cậu rất nhiều đó cậu có biết không</p>
+        <div class="relative">Chào cậu</div>
+        <br><br>
+        <div class="relative">Cậu có biết là <div class="absolute"> Cậu đẹp lắm không</div> </div>
+    </body>
+</html>
